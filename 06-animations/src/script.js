@@ -29,6 +29,7 @@ scene.add(camera);
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
 });
+
 renderer.setSize(sizes.width, sizes.height);
 
 //Time  >> traditional way to control animation!
@@ -53,16 +54,16 @@ const tick = () => {
   //   console.log(elapsedTime);
 
   //gsap
-  
 
   //Update objects
-//   mesh.rotation.y = elapsedTime * Math.PI * 2;
-//   mesh.position.y = Math.sin(elapsedTime);
-//   mesh.position.x = Math.cos(elapsedTime);
+  //   mesh.rotation.y = elapsedTime * Math.PI * 2;
+  //   mesh.position.y = Math.sin(elapsedTime);
+  //   mesh.position.x = Math.cos(elapsedTime);
   //Render
   renderer.render(scene, camera);
   window.requestAnimationFrame(tick);
 };
+
 tick();
 
 // Another of Clock method is getDelta(...), but do not use it
